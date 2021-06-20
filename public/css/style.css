@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    
+}
+form .inp1{
+  width: 600px;
+  max-width: 400px;
+  font-size: 14px;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  padding: 10px;
+  margin: 50px 0px 10px 0;
+  outline: none;
+  border: 1px solid rgb(119, 107, 112);
+}
+form .inp2{
+  padding:12px 40px;
+  margin: 20px auto;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: beige;
+  }
+
+h4,p{
+    margin-bottom: 5px;
+    color: rgb(92, 61, 74);
+}

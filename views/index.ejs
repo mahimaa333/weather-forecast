@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <div class="form">
+            <form action="/" method="POST">
+                <div>
+                <input width="100%" class="inp1" type="text" name="place" placeholder="Enter a place to get the forecast" id=""></div>
+               <div><input class="inp2" type="submit" name="" id="" value="Forecast"></div>
+            </form>
+            <% if(weather !== null){ %>
+                <h4> Location - <%= place %> </h4>
+                <p>Temperature: <%= temp %> </p>
+                <p>Humidity: <%= humidity %> </p>
+				<p>Wind Speed: <%= wind %> </p>
+                <p>Wind Direction: <%= dir %> </p>
+                <p><%= desc %> </p>
+              <% } %>
+      
+              <% if(errMessage !== null){ %>
+                <p><%= errMessage %></p>
+              <% } %>
+    </div>
+
+</body>
+
+</html>
